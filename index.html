@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La Empanadería | Empanadas argentinas al horno</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Figtree:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.html" class="header__logo">La Empanadería</a>
+      <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-navigation">☰</button>
+      <nav class="nav" id="main-navigation">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="index.html" class="nav__link active">Inicio</a></li>
+          <li class="nav__item"><a href="index.html#menu" class="nav__link">Menú</a></li>
+          <li class="nav__item"><a href="index.html#resenas" class="nav__link">Reseñas</a></li>
+          <li class="nav__item"><a href="pages/sobreNosotros.html" class="nav__link">Nosotros</a></li>
+          <li class="nav__item"><a href="pages/contacto.html" class="nav__link">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero__content">
+        <h1 class="hero__title">Empanadas argentinas, al horno y recién hechas</h1>
+        <p class="hero__subtitle">Masa casera, relleno abundante y el repulgue de siempre.</p>
+        <a href="#menu" class="btn">Ver menú</a>
+      </div>
+      <img src="img/hero.svg" alt="Empanada dorada recién salida del horno" class="hero__img" />
+    </section>
+
+    <main>
+      <section class="productos" id="menu">
+        <h2 class="section-title">Nuestras empanadas</h2>
+        <p class="section-subtitle">Seis variedades, todas con masa casera. Precios por unidad.</p>
+        <div class="productos__container">
+          <article class="card-producto">
+            <img src="img/carne.svg" alt="Empanada de carne cortada a cuchillo" class="card-producto__img" />
+            <div class="card-producto__body">
+              <h3 class="card-producto__titulo">Carne cortada a cuchillo</h3>
+              <p class="card-producto__descripcion">Carne vacuna, cebolla de verdeo, morrón y huevo duro. Jugosa y bien condimentada.</p>
+              <div class="card-producto__footer">
+                <span class="card-producto__precio">$2.500</span>
+                <a href="pages/contacto.html" class="btn">Consultar</a>
+              </div>
+            </div>
+          </article>
+          <article class="card-producto">
+            <img src="img/pollo.svg" alt="Empanada de pollo" class="card-producto__img" />
+            <div class="card-producto__body">
+              <h3 class="card-producto__titulo">Pollo</h3>
+              <p class="card-producto__descripcion">Pollo desmenuzado con cebolla, morrón y un toque de pimentón dulce.</p>
+              <div class="card-producto__footer">
+                <span class="card-producto__precio">$2.300</span>
+                <a href="pages/contacto.html" class="btn">Consultar</a>
+              </div>
+            </div>
+          </article>
+          <article class="card-producto">
+            <img src="img/jamon-y-queso.svg" alt="Empanada de jamón y queso" class="card-producto__img" />
+            <div class="card-producto__body">
+              <h3 class="card-producto__titulo">Jamón y queso</h3>
+              <p class="card-producto__descripcion">Jamón cocido y muzzarella fundida. La que nunca falla.</p>
+              <div class="card-producto__footer">
+                <span class="card-producto__precio">$2.300</span>
+                <a href="pages/contacto.html" class="btn">Consultar</a>
+              </div>
+            </div>
+          </article>
+          <article class="card-producto">
+            <img src="img/humita.svg" alt="Empanada de humita" class="card-producto__img" />
+            <div class="card-producto__body">
+              <h3 class="card-producto__titulo">Humita</h3>
+              <p class="card-producto__descripcion">Choclo cremoso con salsa blanca, cebolla y queso.</p>
+              <div class="card-producto__footer">
+                <span class="card-producto__precio">$2.300</span>
+                <a href="pages/contacto.html" class="btn">Consultar</a>
+              </div>
+            </div>
+          </article>
+          <article class="card-producto">
+            <img src="img/caprese.svg" alt="Empanada de caprese" class="card-producto__img" />
+            <div class="card-producto__body">
+              <h3 class="card-producto__titulo">Caprese</h3>
+              <p class="card-producto__descripcion">Muzzarella, tomate fresco y albahaca en masa crocante.</p>
+              <div class="card-producto__footer">
+                <span class="card-producto__precio">$2.300</span>
+                <a href="pages/contacto.html" class="btn">Consultar</a>
+              </div>
+            </div>
+          </article>
+          <article class="card-producto">
+            <img src="img/verdura.svg" alt="Empanada de verdura" class="card-producto__img" />
+            <div class="card-producto__body">
+              <h3 class="card-producto__titulo">Verdura</h3>
+              <p class="card-producto__descripcion">Acelga, salsa blanca y queso, con un toque de nuez moscada.</p>
+              <div class="card-producto__footer">
+                <span class="card-producto__precio">$2.200</span>
+                <a href="pages/contacto.html" class="btn">Consultar</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="resenas" id="resenas">
+        <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+        <div class="resenas__grid">
+          <article class="card-resena card-resena--destacada">
+            <div class="card-resena__stars" aria-label="5 estrellas">★★★★★</div>
+            <p>"La de carne cortada a cuchillo es la mejor que probé. Llegaron calientes y la masa estaba justo en su punto."</p>
+            <h3>Lucía M.</h3>
+          </article>
+          <article class="card-resena">
+            <div class="card-resena__stars" aria-label="5 estrellas">★★★★★</div>
+            <p>"Pedimos dos docenas para una reunión y volaron. La humita, increíble."</p>
+            <h3>Martín R.</h3>
+          </article>
+          <article class="card-resena">
+            <div class="card-resena__stars" aria-label="4 estrellas">★★★★☆</div>
+            <p>"Muy buena atención y buenos precios. Ya tengo mi favorita: la caprese."</p>
+            <h3>Carla S.</h3>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p><strong>La Empanadería &copy; 2026</strong> - Todos los derechos reservados.</p>
+      <p>Diseñado por <strong>Ger</strong></p>
+    </footer>
+    <script src="js/nav.js" defer></script>
+  </body>
+</html>

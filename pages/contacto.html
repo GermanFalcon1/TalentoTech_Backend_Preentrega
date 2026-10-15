@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto | La Empanadería</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Figtree:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="../index.html" class="header__logo">La Empanadería</a>
+      <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-navigation">☰</button>
+      <nav class="nav" id="main-navigation">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="../index.html" class="nav__link">Inicio</a></li>
+          <li class="nav__item"><a href="../index.html#menu" class="nav__link">Menú</a></li>
+          <li class="nav__item"><a href="../index.html#resenas" class="nav__link">Reseñas</a></li>
+          <li class="nav__item"><a href="../pages/sobreNosotros.html" class="nav__link">Nosotros</a></li>
+          <li class="nav__item"><a href="../pages/contacto.html" class="nav__link active">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="contacto">
+        <div class="contacto__datos">
+          <h1 class="section-title">Contacto</h1>
+          <p>Escribinos para hacer un pedido o resolver una duda. Respondemos el mismo día.</p>
+          <ul>
+            <li><strong>Zona:</strong> Buenos Aires, Argentina</li>
+            <li><strong>Horario:</strong> Martes a domingo, de 11 a 22 h</li>
+            <li><strong>Correo:</strong> hola@laempanaderia.com</li>
+          </ul>
+        </div>
+        <!-- Reemplazá TU_ID por el código de tu formulario de Formspree -->
+        <form class="form" action="https://formspree.io/f/TU_ID" method="POST">
+          <div class="form__grupo">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required />
+          </div>
+          <div class="form__grupo">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form__grupo">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn">Enviar mensaje</button>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <p><strong>La Empanadería &copy; 2026</strong> - Todos los derechos reservados.</p>
+      <p>Diseñado por <strong>Ger</strong></p>
+    </footer>
+    <script src="../js/nav.js" defer></script>
+  </body>
+</html>
